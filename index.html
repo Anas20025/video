@@ -200,7 +200,9 @@
       document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
     }
   
-  window.onload = function () { window.scrollTo(0, 0); };
+  window.addEventListener("load", function () {
+  setTimeout(() => { window.scrollTo(0, 0); }, 10);
+});
 </script>
 </body>
 </html>
