@@ -94,6 +94,7 @@
       box-shadow: 0 0 12px rgba(0,0,0,0.7);
       overflow: hidden;
       transition: all 0.3s ease;
+      position: relative;
     }
     .video-item:hover {
       transform: translateY(-6px) scale(1.02);
@@ -114,6 +115,24 @@
       text-decoration: none;
       color: inherit;
       display: block;
+      position: relative;
+    }
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.5em;
+      color: #fff;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      padding: 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .video-item:hover .play-btn {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.1);
     }
     .lang-switch {
       position: absolute;
@@ -222,36 +241,42 @@
       <div class="video-item">
         <a href="https://youtu.be/mj-LXbuOTiU" target="_blank">
           <img src="https://img.youtube.com/vi/mj-LXbuOTiU/hqdefault.jpg">
+          <i class="fas fa-play play-btn"></i>
           <div class="video-desc">قصة في يوتيوب</div>
         </a>
       </div>
       <div class="video-item">
         <a href="https://youtu.be/fcXEbk3UIFo" target="_blank">
           <img src="https://img.youtube.com/vi/fcXEbk3UIFo/hqdefault.jpg">
+          <i class="fas fa-play play-btn"></i>
           <div class="video-desc">قصة في يوتيوب</div>
         </a>
       </div>
       <div class="video-item">
         <a href="https://drive.google.com/file/d/1IIJm8y8k4ypJeai_oRK3XWyEN3A3mbfu/view" target="_blank">
           <img src="https://drive.google.com/thumbnail?id=1IIJm8y8k4ypJeai_oRK3XWyEN3A3mbfu">
+          <i class="fas fa-play play-btn"></i>
           <div class="video-desc">ثيم حماسي</div>
         </a>
       </div>
       <div class="video-item">
         <a href="https://drive.google.com/file/d/1mrygRbtnvRF1r-umJ5yCz6ABUWbu0jZM/view" target="_blank">
           <img src="https://drive.google.com/thumbnail?id=1mrygRbtnvRF1r-umJ5yCz6ABUWbu0jZM">
+          <i class="fas fa-play play-btn"></i>
           <div class="video-desc">فيديو يوتيوب</div>
         </a>
       </div>
       <div class="video-item">
         <a href="https://drive.google.com/file/d/1IThvBPCjSUcwXvVvAX2ISxGeLJeCvTiO/view" target="_blank">
           <img src="https://drive.google.com/thumbnail?id=1IThvBPCjSUcwXvVvAX2ISxGeLJeCvTiO">
+          <i class="fas fa-play play-btn"></i>
           <div class="video-desc">فيديو يوتيوب</div>
         </a>
       </div>
       <div class="video-item">
         <a href="https://drive.google.com/file/d/1BkchhxP9EN7ZAS62Q-8LC6Sg-WiXj1HO/view" target="_blank">
           <img src="https://drive.google.com/thumbnail?id=1BkchhxP9EN7ZAS62Q-8LC6Sg-WiXj1HO">
+          <i class="fas fa-play play-btn"></i>
           <div class="video-desc">فيديو يوتيوب</div>
         </a>
       </div>
